@@ -1,0 +1,53 @@
+<!--<div id="app">
+  <div ui-view></div>
+</div>-->
+<!DOCTYPE html>
+<html lang="polish">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="index/style.css" />
+<link rel="stylesheet" type="text/css" href="index/style.css" />
+<style>
+
+</style>
+<title>Logowanie</title>
+</head>
+<body>
+	<header>
+		<div>
+			<H3>Witaj</H6>
+			<form action="search.php" method="get">
+				<input type="text" value="Szukaj"/>
+				<input type="submit" value="Znajdź"/>
+			</form>
+			
+			<button onclick="stronaLogowania()">Zaloguj się</button>
+			<script>
+				function stronaLogowania(){
+					location.href="login.php";
+				}
+			</script>
+		</div>
+		<nav>
+			<button>Home</button>
+			<button>Gry</button>
+			<button>Memy</button>
+			<button>Dowcipy</button>
+			<button>Teksty</button>
+		</nav>
+	</header>
+	<main>
+		
+		<div>
+			<form action="loggingin.php" method="post">
+				Login: <br/> <input type="text" name="login"/><br/>
+				Password: <br/> <input type="password" name="password"/><br/>
+				<input type="submit" value="Zaloguj się"/>
+			</form>
+		</div>	
+	</main>
+	
+	
+	<script scr="logowanie/script.js" />
+</body>
+</html>
